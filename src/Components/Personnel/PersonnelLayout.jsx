@@ -1,19 +1,24 @@
-import React, { Component } from 'react';
-import PersonnelList from './PersonnelList';
+import React, { Component } from "react";
+import PersonnelList from "./PersonnelList";
+import Navbar from "../Common/NavBar";
+import NavBar from "../Common/NavBar";
+import SearchPersonnel from "./SearchPersonnel";
 class PersonnelLayout extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <React.Fragment>
-                <div className="container-fluid">
-                    <div className="row">
-                        <PersonnelList/>
-                    </div>
-                </div>
-
-            </React.Fragment>
-         );
-    }
+  state = {};
+  render() {
+    return (
+      <React.Fragment>
+          <NavBar/>
+        <div className="container-fluid">
+          <div className="row">
+            <PersonnelList />
+            <SearchPersonnel/>
+            
+          </div>
+        </div>
+      </React.Fragment>
+    );
+  }
 }
- 
+
 export default PersonnelLayout;

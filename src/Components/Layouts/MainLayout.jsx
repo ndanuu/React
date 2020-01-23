@@ -8,9 +8,7 @@ class MainLayout extends Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar/>
         <TasksLayout />
-        <PersonnelLayout/>
         
       </React.Fragment>
     );

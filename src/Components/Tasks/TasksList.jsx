@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Table from "../Common/Table";
 import Pagination from "../Common/Pagination";
 import Button from "../Common/Button";
-import Image from "../Common/Image";
-import CreateTasks from "./CreateTasks";
+// import Image from "../Common/Image";
+import EditTasks from "./EditTasks";
 
 class TasksList extends Component {
   state = {};
@@ -24,7 +24,7 @@ class TasksList extends Component {
                     label="Add Tasks"
                   />
 
-                  <CreateTasks />
+                  
                 </React.Fragment>
 
                 <Table
@@ -60,6 +60,7 @@ class TasksList extends Component {
                          dataTarget="#edittaskmodal"
                          label="Edit"
                          />
+                         <EditTasks/>
                         </td>
                         <td>
                           <Button

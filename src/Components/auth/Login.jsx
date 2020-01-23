@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Image from "../Common/Image";
+// import Image from "../Common/Image";
 import H1 from "../Common/H1";
 import mawingu from "../assets/img/mawingu.png";
 import InputFields from "../Common/InputFields";

@@ -1,12 +1,12 @@
 import React from "react";
-import mawingu from "../assets/img/mawingu.png";
+import Image from "../Common/Image"
 import {Link} from "react-router-dom";
 const NavBar = () => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-sm navbar-light bg-white border-bottom">
         <a className="navbar-brand" href="#">
-          <img src={mawingu} alt="Mawingu Logo" className="img-fluid" />
+          <Image/>
         </a>
         <button
           className="navbar-toggler d-lg-none"
@@ -81,7 +81,7 @@ const NavBar = () => {
                   <Link className="dropdown-item" to="/resetPassword">
                     Change Password
                   </Link>
-                  <Link className="dropdown-item" to="/login">
+                  <Link className="dropdown-item" to="/logout">
                     Logout
                   </Link>
                 </div>

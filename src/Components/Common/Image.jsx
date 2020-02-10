@@ -1,7 +1,8 @@
 import React from "react";
+import mawingu from "../assets/img/mawingu.png";
 
-const Image = (imageSrc, imageName) => {
-  return <img src={imageSrc} alt={imageName} />;
+const Image = () => {
+  return <img src={mawingu} alt={mawingu} />;
 };
 
 export default Image;

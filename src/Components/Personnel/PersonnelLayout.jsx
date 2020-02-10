@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PersonnelList from "./PersonnelList";
-import Navbar from "../Common/NavBar";
 import NavBar from "../Common/NavBar";
 import SearchPersonnel from "./SearchPersonnel";
 class PersonnelLayout extends Component {

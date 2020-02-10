@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {SelectField} from '../Common';
+
 class SearchTasks extends Component {
   state = {};
   render() {
@@ -18,16 +20,19 @@ class SearchTasks extends Component {
                     className="form-control"
                   />
                 </div>
-                <div className="form-group">
-                  <label className="control-label mb-10">Task Status</label>
-                  <select className="form-control select2" name="task_status">
-                    <option value="">---Select Task Status---</option>
-                    <option value="1|Assigned">Assigned</option>
-                    <option value="3|Completed">Completed</option>
-                    <option value="4|Deferred">Deferred</option>
-                    <option value="2|In Progress">In Progress</option>
-                  </select>
-                </div>
+               
+                <SelectField
+                title="Tasks Status"
+                  options={
+                    <React.Fragment>
+                      <option value="">---Select Task Status---</option>
+                      <option value="1|Assigned">Assigned</option>
+                      <option value="3|Completed">Completed</option>
+                      <option value="4|Deferred">Deferred</option>
+                      <option value="2|In Progress">In Progress</option>
+                    </React.Fragment>
+                  }
+                />
                 <div className="form-group">
                   <label className="control-label mb-10 text-left">
                     Date Assigned
@@ -35,8 +40,8 @@ class SearchTasks extends Component {
                   <div className="input-group">
                     <input
                       type="text"
-                      className="form-control datepicker"
-                      value="12-02-2012"
+                      name="form-control datepicker"
+                      className="12-02-2012"
                     />
                     <div className="input-group-addon">
                       <i className="fa fa-calendar" aria-hidden="true"></i>

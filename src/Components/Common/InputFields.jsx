@@ -13,6 +13,10 @@ const InputFields = props => {
           className={props.formType}
           type={props.typeInput}
           placeholder={props.holdValue}
+          name={props.name}
+          label={props.label}
+          onChange={props.onChange}
+          value={props.value}
         />
         <div className="invalid-feedback">Password is required</div>
 

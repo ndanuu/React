@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-class EditTasks extends Component {
+class EditPersonnel extends Component {
   state = {};
   render() {
     return (
       <React.Fragment>
         <div
           className="modal fade"
-          id="edittaskmodal"
+          id="editpersonnelmodal"
           tabindex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
@@ -159,4 +159,4 @@ class EditTasks extends Component {
   }
 }
 
-export default EditTasks;
+export default EditPersonnel;

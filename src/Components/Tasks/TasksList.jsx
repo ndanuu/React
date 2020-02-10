@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Table from "../Common/Table";
-import Pagination from "../Common/Pagination";
-import Button from "../Common/Button";
+import {Table,Pagination,Button} from "../Common";
 // import Image from "../Common/Image";
-import EditTasks from "./EditTasks";
+import {EditTasks,CreateTasks} from "../Tasks";
+
 
 class TasksList extends Component {
   state = {};
@@ -24,7 +23,7 @@ class TasksList extends Component {
                     label="Add Tasks"
                   />
 
-                  
+                  <CreateTasks />
                 </React.Fragment>
 
                 <Table
@@ -53,26 +52,23 @@ class TasksList extends Component {
                         </td>
                         <td>20th Jun 2019 09:22 am</td>
                         <td>
-                         <Button
-                         typeButton="button"
-                         classButton="btn btn-success btn-sm"
-                         dataToggle="modal"
-                         dataTarget="#edittaskmodal"
-                         label="Edit"
-                         />
-                         <EditTasks/>
+                          <Button
+                            typeButton="button"
+                            classButton="btn btn-success btn-sm"
+                            dataToggle="modal"
+                            dataTarget="#edittaskmodal"
+                            label="Edit"
+                          />
+                          <EditTasks />
                         </td>
                         <td>
                           <Button
-                           typeButton="button"
-                           classButton="btn btn-danger btn-sm"
-                           dataToggle="modal"
-                           dataTarget="#deletetaskmodal"
-                           label="Delete"
+                            typeButton="button"
+                            classButton="btn btn-danger btn-sm"
+                            dataToggle="modal"
+                            dataTarget="#deletetaskmodal"
+                            label="Delete"
                           />
-                           
-                          
-                      
                         </td>
                       </tr>
 
@@ -88,20 +84,22 @@ class TasksList extends Component {
                         <td>20th Jun 2019 09:22 am</td>
                         <td>
                           <Button
-                          typeButton="button"
-                          classButton="btn btn-success btn-sm"
-                          dataToggle="modal"
-                          dataTarget="#edittaskmodal"
-                          label="Edit"
+                            typeButton="button"
+                            classButton="btn btn-success btn-sm"
+                            dataToggle="modal"
+                            dataTarget="#edittaskmodal"
+                            label="Edit"
                           />
+                          <EditTasks />
                         </td>
                         <td>
-                         <Button
-                         typeButton="button"
-                         classButton="btn btn-danger btn-sm "
-                         dataToggle="modal"
-                         dataTarget="deletetaskmodal"
-                         label="Delete"/>
+                          <Button
+                            typeButton="button"
+                            classButton="btn btn-danger btn-sm "
+                            dataToggle="modal"
+                            dataTarget="deletetaskmodal"
+                            label="Delete"
+                          />
                         </td>
                       </tr>
 
@@ -116,20 +114,23 @@ class TasksList extends Component {
                         </td>
                         <td>12th Mar 2019 12:27 pm</td>
                         <td>
-                         <Button
-                         typeButton="button"
-                         classButton="btn btn-success btn-sm"
-                         dataToggle="modal"
-                         dataTarget="#edittaskmodal"
-                         label="Edit"/>
+                          <Button
+                            typeButton="button"
+                            classButton="btn btn-success btn-sm"
+                            dataToggle="modal"
+                            dataTarget="#edittaskmodal"
+                            label="Edit"
+                          />
+                          <EditTasks />
                         </td>
                         <td>
                           <Button
-                          typeButton="button"
-                          classButton="btn btn-danger btn-sm"
-                          dataToggle="modal"
-                          dataTarget="deletetaskmodal"
-                          label="Delete"/>
+                            typeButton="button"
+                            classButton="btn btn-danger btn-sm"
+                            dataToggle="modal"
+                            dataTarget="deletetaskmodal"
+                            label="Delete"
+                          />
                         </td>
                       </tr>
                       <tr>
@@ -143,27 +144,23 @@ class TasksList extends Component {
                         </td>
                         <td>12th Mar 2019 12:19 pm</td>
                         <td>
-                        
-                            <Button
+                          <Button
                             typeButton="button"
                             classButton="btn btn-sm btn-success"
                             dataToggle="modal"
                             dataTarget="#edittaskmodal"
                             label="Edit"
                           />
-                          
-                          
+                          <EditTasks />
                         </td>
                         <td>
-                        <Button
+                          <Button
                             typeButton="button"
                             classButton="btn btn-danger btn-sm"
                             dataToggle="modal"
                             dataTarget="#deletemodal"
                             label="Delete"
                           />
-                            
-                          
                         </td>
                       </tr>
                     </React.Fragment>

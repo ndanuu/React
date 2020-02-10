@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TasksList from "./TasksList";
-import Navbar from "../Common/NavBar"
+
 import SearchTasks from './SearchTasks';
 import NavBar from "../Common/NavBar";
 class TasksLayout extends Component {
@@ -9,6 +9,7 @@ class TasksLayout extends Component {
     return (
       <React.Fragment>
         <NavBar/>
+        <br></br>
         <div className="container-fluid">
           <div className="row">
             

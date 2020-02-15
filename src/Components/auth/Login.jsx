@@ -16,7 +16,7 @@ class Login extends Component {
 
     this.state = {
       personnel_phone: "",
-      password: "",
+      personnel_password: "",
       loggedIn
     };
     this.submitForm = this.submitForm.bind(this);
@@ -31,20 +31,19 @@ class Login extends Component {
 
   submitForm(e) {
     e.preventDefault();
-    const { personnel_phone, password } = this.state;
+    const { personnel_phone, personnel_password } = this.state;
     //login magic
-    console.log({ personnel_phone, password });
-    if (personnel_phone === "1" && password === "B") {
-      window.localStorage.setItem("token", "qwertyuiop123erfgbn");
+    // console.log({ personnel_phone, personnel_password });
+    // if (personnel_phone === "0722222222" && personnel_password === "1234567890") {
+      // window.localStorage.setItem("token", "qwertyuiop123erfgbn");
       this.setState({
         loggedIn: true
       });
-      console.log("yay i am clicked");
-    }
+    
   }
 
   render() {
-    const { personnel_phone, password } = this.state;
+    const { personnel_phone, personnel_password } = this.state;
     if (this.state.loggedIn) {
       return <Redirect to="/mainLayout" />;
     }
@@ -70,12 +69,12 @@ class Login extends Component {
               <InputFields
                 formType="form-control is-invalid"
                 forIcon="fa fa-lock"
-                typeInput="Password"
-                holdValue="Password"
+                typeInput="password"
+                holdValue="password"
                 autocomplete="off"
                 onChange={this.onChange}
-                value={password}
-                name="password"
+                value={personnel_password}
+                name="personnel_password"
               />
 
               <Button
